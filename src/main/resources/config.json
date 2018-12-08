@@ -1,0 +1,6 @@
+{
+  "port" : "8000",
+  "response403file" : "/forbiddenError.html",
+  "response404file" : "/notFoundError.html",
+  "response500file" : "/internalServerError.html"
+}
