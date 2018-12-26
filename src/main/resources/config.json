@@ -1,6 +1,12 @@
 {
   "port" : "8000",
-  "response403file" : "/forbiddenError.html",
-  "response404file" : "/notFoundError.html",
-  "response500file" : "/internalServerError.html"
+  "errorPage" : [
+    {"errorCode" : "403", "page" : "/forbiddenError.html"},
+    {"errorCode" : "404", "page" : "/notFoundError.html"},
+    {"errorCode" : "500", "page" : "/internalServerError.html"}
+  ],
+  "virtualHost" : [
+    {"documentRoot" : "a.com", "serverName" : "/webapp"},
+    {"documentRoot" : "b.com", "serverName" : "/"}
+  ]
 }
